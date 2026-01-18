@@ -1,0 +1,13 @@
+{
+  "name": "Timeline Calendar Card",
+  "content_in_root": false,
+  "domains": ["calendar"],
+  "homeassistant": "2024.1.0",
+  "iot_class": "local_polling",
+  "persistent_directory": "timeline-calendar",
+  "documentation": "https://github.com/yourusername/timeline-calendar/blob/main/README.md",
+  "issues": "https://github.com/yourusername/timeline-calendar/issues",
+  "source": "custom",
+  "render_readme": true,
+  "requirements": []
+}

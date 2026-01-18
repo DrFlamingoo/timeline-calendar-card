@@ -5,7 +5,7 @@ import { calculateMasonryLayout, getMaxColumns, EventLayout } from './layout';
 import { generateTimeGradient, formatTime } from './utils';
 
 @customElement('timeline-calendar-timeline')
-export class TimelineCalendar extends LitElement {
+export class TimelineCalendarTimeline extends LitElement {
   @property({ type: Array })
   events: CalendarEvent[] = [];
 
@@ -184,6 +184,6 @@ export class TimelineCalendar extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'timeline-calendar-timeline': TimelineCalendar;
+    'timeline-calendar-timeline': TimelineCalendarTimeline;
   }
 }

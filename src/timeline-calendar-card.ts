@@ -95,8 +95,8 @@ if (window.customCards === undefined) {
   window.customCards = [];
 }
 window.customCards.push({
-  type: 'timeline-calendar',
-  name: 'Timeline Calendar',
+  type: 'custom:timeline-calendar-card',
+  name: 'Timeline Calendar Card',
   description: 'Horizontal timeline calendar for caldav events',
   preview: false,
   documentationURL: 'https://github.com/dmjk/timeline-calendar-card',

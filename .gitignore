@@ -1,5 +1,4 @@
 node_modules/
-dist/
 *.log
 .DS_Store
 coverage/
@@ -144,7 +143,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Gatsby files
 .cache/
@@ -153,7 +152,7 @@ dist
 # public
 
 # vuepress build output
-.vuepress/dist
+.vuepress/
 
 # vuepress v2.x temp and cache directory
 .temp

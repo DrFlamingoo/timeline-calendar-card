@@ -88,6 +88,23 @@ This runs the visualization which shows:
 
 ## Installation
 
+### Method 1: Via HACS (Recommended)
+
+1. Open HACS in Home Assistant
+2. Go to Custom repositories
+3. Add: `https://github.com/DrFlamingoo/ha-timeline-calendar-card`
+4. Select "Lovelace" category
+5. Search for "Timeline Calendar Card" and install
+6. Restart Home Assistant
+7. Add to dashboard:
+   ```yaml
+   type: custom:timeline-calendar
+   calendars:
+     - calendar.my_calendar
+   ```
+
+### Method 2: Manual Installation
+
 1. Copy `dist/ha-timeline-calendar-card.js` to your Home Assistant config folder: `config/www/`
 2. Add a resource to your dashboard:
    ```yaml
@@ -101,6 +118,20 @@ This runs the visualization which shows:
    calendars:
      - calendar.my_calendar
    ```
+
+### Configuration
+
+**Required:**
+- `calendars` - List of calendar entity IDs to display
+
+**Example:**
+```yaml
+type: custom:timeline-calendar
+calendars:
+  - calendar.family
+  - calendar.work
+  - calendar.holidays
+```
 
 ## Features
 
@@ -133,3 +164,24 @@ This visualization helps developers understand:
 - How event widths are calculated based on duration
 - Where overlapping events are placed
 - The complete 24-hour time range from 2 AM to 2 AM
+
+## Troubleshooting
+
+### Card not appearing in HACS
+
+- Make sure repository is PUBLIC on GitHub
+- Wait 5-10 minutes for HACS to cache the repo
+- Try removing and re-adding the custom repository
+
+### Card not rendering
+
+- Check browser console (F12) for JavaScript errors
+- Verify calendar entities exist in Home Assistant
+- Ensure calendars are properly configured in caldav integration
+- Hard refresh dashboard (Ctrl+Shift+R)
+
+### Calendar events not showing
+
+- Currently using dummy test data - real caldav integration coming soon
+- Check that `calendars` config lists valid entity IDs
+- Verify entities are available in Developer Tools → States

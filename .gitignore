@@ -5,6 +5,9 @@ coverage/
 .env
 .env.local
 
+# Generated declaration files (not needed for distribution)
+dist/*.d.ts
+
 # Created by https://www.toptal.com/developers/gitignore/api/homeassistant,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=homeassistant,node
 

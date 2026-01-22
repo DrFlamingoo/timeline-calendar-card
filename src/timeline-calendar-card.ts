@@ -29,8 +29,13 @@ export class TimelineCalendarCard extends LitElement {
   `;
 
   setConfig(config: TimelineCalendarConfig) {
-    if (!config.calendars || config.calendars.length === 0) {
-      throw new Error('You need to define at least one calendar');
+    if (!config) {
+      throw new Error('Card configuration is missing');
+    }
+    // Allow cards without calendars - will show demo mode
+    if (!config.calendars) {
+      console.warn('Timeline Calendar Card: No calendars configured. Showing demo mode. Configure calendars in your lovelace configuration.');
+      config.calendars = [];
     }
     this.config = config;
   }

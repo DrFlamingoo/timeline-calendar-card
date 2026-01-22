@@ -44,10 +44,21 @@ BACKGROUND GRADIENT (Day/Night Cycle):
 - ✅ **24-hour horizontal timeline** - Full day view from 2 AM to 2 AM next day
 - ✅ **Masonry layout** - Overlapping events automatically stack in columns
 - ✅ **Time-aware gradient** - Dynamic day/night background reflecting time of day
-- ✅ **Multiple calendars** - Support for multiple caldav calendar sources
+- ✅ **Demo mode** - Works immediately with dummy events, no configuration needed
+- 🔄 **Multiple calendars** - Support for multiple calendar sources (coming soon)
 - ✅ **Ultra-wide optimized** - Designed for large screens and displays
 - ✅ **Event titles** - Clear event name display with time range
 - ✅ **Responsive positioning** - Percentage-based layout for any width
+
+## Quick Start
+
+Add to your Lovelace dashboard:
+
+```yaml
+type: custom:timeline-calendar-card
+```
+
+That's it! The card will display demo events from today. See [INSTALLATION.md](INSTALLATION.md) for more options.
 - ✅ **Hover effects** - Interactive elements with smooth animations
 
 ## Development

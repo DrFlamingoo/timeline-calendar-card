@@ -24,7 +24,8 @@ export default {
     extensions: ['.ts', '.js'],
   },
   devtool: 'source-map',
-  externals: {
-    lit: 'lit',
-  },
+  // Do NOT externalize 'lit' - it must be bundled since Home Assistant doesn't provide it globally
+  // externals: {
+  //   lit: 'lit',
+  // },
 };

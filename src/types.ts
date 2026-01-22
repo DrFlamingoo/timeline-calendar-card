@@ -15,7 +15,7 @@ export interface CalendarEvent {
  */
 export interface TimelineCalendarConfig {
   type: string;
-  calendars: string[];
+  calendars?: string[];  // Optional - will use demo mode if not provided
 }
 
 /**
